@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgray2"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <TextView
+        android:id="@+id/excontent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Allow Explicit Content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/excontent2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchex_content"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/excontent2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Turn on to play explicit conte\nExplicit content is labeled with E tag"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/show_unp_song"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchex_content"
+        app:layout_constraintTop_toBottomOf="@id/excontent"/>
+
+    <TextView
+        android:id="@+id/show_unp_song"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Show unplayable songs"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/show_unp_song2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchshow_unp_songs"
+        app:layout_constraintTop_toBottomOf="@id/excontent2" />
+
+    <TextView
+        android:id="@+id/show_unp_song2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Show songs that are unplayable."
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/normalizevol"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchshow_unp_songs"
+        app:layout_constraintTop_toBottomOf="@id/show_unp_song"
+        />
+
+
+    <TextView
+        android:id="@+id/normalizevol"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Normalize volume"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/normalizevol2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchnormalizevol"
+        app:layout_constraintTop_toBottomOf="@id/show_unp_song2" />
+
+
+    <TextView
+        android:id="@+id/normalizevol2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Set the same volume level for all tracks"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/volev"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchnormalizevol"
+        app:layout_constraintTop_toBottomOf="@id/normalizevol"/>
+
+
+
+    <TextView
+        android:id="@+id/volev"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Volume level"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/volev2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/buttonvolev"
+        app:layout_constraintTop_toBottomOf="@id/normalizevol2"/>
+
+    <TextView
+        android:id="@+id/volev2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Adjust the volume for your \nenvironment"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/dev_broad_stat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/buttonvolev"
+        app:layout_constraintTop_toBottomOf="@id/volev"/>
+
+    <TextView
+        android:id="@+id/dev_broad_stat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Device Broadcast Status"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/dev_broad_stat2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchdev_broad_stat"
+        app:layout_constraintTop_toBottomOf="@id/volev2"/>
+
+    <TextView
+        android:id="@+id/dev_broad_stat2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Allow other apps on your device to see what\nyou are listening to."
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/auto_p"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchdev_broad_stat"
+        app:layout_constraintTop_toBottomOf="@id/dev_broad_stat"/>
+
+    <TextView
+        android:id="@+id/auto_p"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Autoplay"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/auto_p2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchauto_p"
+        app:layout_constraintTop_toBottomOf="@id/dev_broad_stat2" />
+
+    <TextView
+        android:id="@+id/auto_p2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Keep on listening to similar tracks when your\nmusic ends."
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/canvas"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchauto_p"
+        app:layout_constraintTop_toBottomOf="@id/auto_p" />
+
+    <TextView
+        android:id="@+id/canvas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Canvas"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/canvas2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchcanvas"
+        app:layout_constraintTop_toBottomOf="@id/auto_p2" />
+
+    <TextView
+        android:id="@+id/canvas2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Play Canvases for the current Track.They're\noptimized to use very little data and battery."
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonhome"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/switchcanvas"
+        app:layout_constraintTop_toBottomOf="@id/canvas" />
+
+    <Switch
+        android:id="@+id/switchex_content"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/switchshow_unp_songs"
+        app:layout_constraintLeft_toRightOf="@id/excontent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Switch
+        android:id="@+id/switchshow_unp_songs"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/switchnormalizevol"
+        app:layout_constraintLeft_toRightOf="@id/show_unp_song"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switchex_content"/>
+
+    <Switch
+        android:id="@+id/switchnormalizevol"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/buttonvolev"
+        app:layout_constraintLeft_toRightOf="@id/normalizevol"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switchshow_unp_songs" />
+
+
+    <Switch
+        android:id="@+id/switchdev_broad_stat"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/switchauto_p"
+        app:layout_constraintLeft_toRightOf="@id/dev_broad_stat"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonvolev" />
+
+    <Switch
+        android:id="@+id/switchauto_p"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/switchcanvas"
+        app:layout_constraintLeft_toRightOf="@id/auto_p"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switchdev_broad_stat" />
+
+    <Switch
+        android:id="@+id/switchcanvas"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/buttonyourlibrary"
+        app:layout_constraintLeft_toRightOf="@id/canvas"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switchauto_p" />
+
+    <Button
+        android:id="@+id/buttonhome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/darkgray"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/buttonsearch"
+        app:layout_constraintTop_toBottomOf="@id/switchcanvas"/>
+
+    <Button
+        android:id="@+id/buttonsearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/darkgray"
+        android:text="Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/buttonhome"
+        app:layout_constraintRight_toLeftOf="@id/buttonyourlibrary"
+        app:layout_constraintTop_toBottomOf="@id/switchcanvas"/>
+
+    <Button
+        android:id="@+id/buttonyourlibrary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/darkgray"
+        android:text="Your Library"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/buttonsearch"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switchcanvas"/>
+    <Button
+        android:id="@+id/buttonvolev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:text="Normal"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/switchdev_broad_stat"
+        app:layout_constraintLeft_toRightOf="@id/volev"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switchnormalizevol"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
